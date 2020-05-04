@@ -44,19 +44,19 @@ def DB(SQL):
 	finally:
 		cnxn.close()
 
-# def DB_get(SQL):
-	# db = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-						  # "Server="+server+";"
-						  # "Database=Chromium;"
-						  # "Trusted_Connection=yes;")
-	# db.autocommit = True
+def DB_get(SQL):
+	db = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+						  "Server="+server+";"
+						  "Database=Chromium;"
+						  "Trusted_Connection=yes;")
+	db.autocommit = True
 
-	# # Prepare a cursor object using cursor() method
-	# cursor = db.cursor()
-	# cursor.execute(SQL)
-	# result = cursor.fetchall()
-	# db.close()
-	# return result
+	# Prepare a cursor object using cursor() method
+	cursor = db.cursor()
+	cursor.execute(SQL)
+	result = cursor.fetchall()
+	db.close()
+	return result
 
 # def getTables():
 	# sql = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'"
@@ -86,6 +86,25 @@ def getCredentials():
 	credentialsFile.close()
 	return server
 
+def tableOut(info, path):
+	fout = open(path, 'w')
+	# Loop through dictionary to write to file
+	for location in info:
+		# Check for none type in object
+		if None in location or 'None' in location or 'NULL' in location or 'NULL, NULL' in location:
+			# Go through item by item to replace None
+			for i in range(len(location)):
+				if location[i] == None or location[i] == 'None' or location[i] == 'NULL' or location[i] == 'NULL, NULL':
+					location[i] = ''
+				elif 'NULL, NULL' in location[i]:
+					location[i] = location[i].replace('NULL, NULL, ', '')
+				elif 'NULL, ' in location[i]:
+					location[i] = location[i].replace('NULL, ', '')
+		# Convert list to string
+		outLine = '\t'.join(location)
+		fout.write(outLine+'\n')
+	fout.close()
+
 # ------------------------------------------------------
 # OPERATIONS
 # ------------------------------------------------------
@@ -97,3 +116,47 @@ path = path[:find_last(path,os.sep)]
 
 # Get DB credentials
 server = getCredentials()
+
+# Define aquifer
+aquifer = 'Alluvial'
+
+# Define watersheds list
+watersheds = ['Sandia', 'Upper Mortendad', 'Lower Mortendad', 'Los Alamos', 'Pajarito']
+
+# Initialize alluvialInfo array
+alluvialInfo = []
+
+# Loop through watersheds
+for watershed in watersheds:
+	# Query out Alluvial table
+	# sql = """
+	# SELECT * FROM
+		# (SELECT * 
+		# FROM chromium_locations 
+		# WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
+	# WHERE active = 'Active' 
+	# OR exceedance = 'Exceedance' 
+	# ORDER BY watershed, location_id
+	# """
+
+	sql = """
+	SELECT * FROM
+		(SELECT * FROM
+			(SELECT * 
+			FROM chromium_locations 
+			WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
+		WHERE watershed = '"""+watershed+"""') AS WATERSHED
+	WHERE active = 'Active' 
+	OR exceedance = 'Exceedance' 
+	ORDER BY location_id
+	"""
+
+	for row in DB_get(sql):
+		alluvialInfo.append(row)
+
+# Check that destination directories exist and create if not
+if not os.path.exists(path+os.sep+'Locations'+os.sep+'Tables'+os.sep):
+	os.makedirs(path+os.sep+'Locations'+os.sep+'Tables'+os.sep)
+
+tableOut(alluvialInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+'Alluvial.txt')
+

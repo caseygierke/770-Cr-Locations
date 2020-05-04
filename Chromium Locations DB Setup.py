@@ -107,7 +107,7 @@ server = getCredentials()
 
 # Adjust header row
 # Open infile
-fin = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Watersheds- Final- Compiled- Narrowed.txt','r')
+fin = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Compiled- Narrowed- For DB.txt','r')
 # Open the file to write to
 fout = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'DBin.csv','w')
 
@@ -167,7 +167,11 @@ sql = '''DROP TABLE IF EXISTS chromium_locations;
 	toc_elevation VARCHAR(100), 
 	lwa_notes VARCHAR(500), 
 	source VARCHAR(100), 
-	reason_code VARCHAR(100))'''
+	max_date VARCHAR(100),
+	max VARCHAR(100),
+	active VARCHAR(100),
+	exceedance VARCHAR(100),
+	substantial_data VARCHAR(100))'''
 DB(sql)
 
 # DROP TABLE IF EXISTS IEc_SLVs;
@@ -204,7 +208,7 @@ DB(sql)
 # # Change filePath to be SQL compatible
 # fin = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Watersheds- Final- Compiled- Narrowed.txt','r')
 
-filePath = path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Watersheds- Final- Compiled- Narrowed.txt'
+filePath = path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Compiled- Narrowed- For DB.txt'
 filePath = filePath.replace(os.sep, '/')
 
 # -- Import from .csv file to table

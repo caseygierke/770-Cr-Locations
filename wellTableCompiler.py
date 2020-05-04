@@ -62,7 +62,7 @@ def dictOut(dict, path):
 			outString = ''
 			for key in dict[item]:
 				outString = outString +str(dict[item][key])+'\t'
-			fout.write(outString+'\n')
+			fout.write(outString[:-1]+'\n')
 	fout.close()
 	
 # ------------------------------------------------------
@@ -122,11 +122,13 @@ for line in wellInfoIn:
 	location = cols[0]
 	
 	# Check that location is not in springs or watercourse
-	if location in springInfo or location in watercourseInfo:
+	# if location in springInfo or location in watercourseInfo:
+	if location in watercourseInfo:
 		continue
 	
 	# Define excluded types
-	excludedTypes = ['SS(0-1ft)', 'BH(1-10ft)', 'BH', 'WCS', 'CH', 'BHover10ft', 'AMS', 'FS', 'SPR', 'NB', 'OUT', 'WIP', 'GENERIC', 'MET_Tower', 'DWF', 'MOI', 'TEST', 'SO']
+	# excludedTypes = ['SS(0-1ft)', 'BH(1-10ft)', 'BH', 'WCS', 'CH', 'BHover10ft', 'AMS', 'FS', 'SPR', 'NB', 'OUT', 'WIP', 'GENERIC', 'MET_Tower', 'DWF', 'MOI', 'TEST', 'SO']
+	excludedTypes = ['WCS']
 
 	# Check that location is not excluded location type
 	if cols[2] in excludedTypes:
