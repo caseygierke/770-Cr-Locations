@@ -310,6 +310,7 @@ for location in figureDict:
 
 		# Check if active
 		if datetime.datetime(max(date).year, max(date).month, max(date).day) > datetime.datetime.strptime('2015-01-01', '%Y-%m-%d'):
+			print(location)
 			foutActive.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\n')
 		
 	# Write maxes to an outfile

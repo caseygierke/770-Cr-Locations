@@ -547,3 +547,17 @@ R-61	-106.2612038	35.8575756	No Data	No Data	No Data	No Data	No Data	No Data	No 
 R-7	-106.2795381	35.8746897	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCWB-5	-106.2764548	35.8632386	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCWB-5.5B	-106.2736119	35.8622534	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+PU-00182	-106.2308475	35.8786626	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+SCP-1abc S2	-106.2572968	35.8634698	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+MCWB-9B	-106.2579232	35.8605115	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+LAWS-01 S1	-106.2192591	35.8669997	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+LA-00001	-106.2646264	35.8716831	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+BCO-1	-106.2492164	35.8891488	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+LAO-4.5A	-106.2395926	35.8702944	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+MCWB-7B	-106.270474	35.8604516	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+R-45	-106.2505637	35.8592115	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+R-33	-106.273675	35.8606238	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+MCO-12	-106.2503049	35.8597293	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+MCWB-8.1A	-106.2630418	35.8610965	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+CrIN-6	-106.250741600000	35.861222300000	321.0	2017-11-07	Y	Y	259.0	2017-11-07	No Data	No Data	No Data	No Data	3
+CRPZ-1	-106.261081400000	35.859008600000	385.0	2016-12-15	Y	Y	76.3	2019-02-07	No Data	No Data	No Data	No Data	4

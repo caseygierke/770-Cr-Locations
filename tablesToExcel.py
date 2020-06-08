@@ -110,7 +110,7 @@ greyFill = PatternFill(start_color='d3d3d3',
                    end_color='d3d3d3',
                    fill_type='solid')	
 				   
-canyonsOut = ['Sandia', 'Upper Mortendad', 'Lower Mortendad', 'Los Alamos']
+canyonsOut = ['Sandia', 'Mortendad', 'Los Alamos']
 
 # Define aquifers
 aquifers = ['Alluvial', 'Intermediate', 'Regional']
@@ -215,8 +215,8 @@ for aquifer in aquifers:
 				# Handle canyons
 				if canyon == canyonsOut[0]:
 					canyonOut = canyonsOut[0]+' Canyon'
-				elif canyon == canyonsOut[1] or canyon == 'Lower Mortendad':
-					canyonOut = canyonsOut[1][6:]+' Canyon'
+				elif canyon == canyonsOut[1]:
+					canyonOut = canyonsOut[1]+' Canyon'
 				elif canyon == canyonsOut[2]:
 					canyonOut = canyonsOut[2]+' and Pajarito Canyons'
 					

@@ -49,7 +49,8 @@ locationFile = open(path+os.sep+'Outputs'+os.sep+fileName + '.txt', 'r')
 fout = open(path+os.sep+'Outputs'+os.sep+'Compiled- Narrowed- For DB.txt', 'w')
 
 #Open Shapefile with shapes to check points against
-sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
+# sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
+sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds_IEcD") 
 
 #Read records in shapefile
 sfRec = sf.records() 
