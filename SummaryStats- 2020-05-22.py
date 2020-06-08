@@ -83,17 +83,17 @@ def getCredentials():
 # INPUTS
 # ------------------------------------------------------
 
-# Define infile
-infile = 'Compiled- Narrowed'
+# Define input file
+input = 'Compiled- Narrowed'
 # input = 'Plume- Compiled- Regional'
 inputPath = path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep
 
 # Define subThreshold value (number of data points to be substantial)
-subThreshold = 3
+subThreshold = 5
 
 # Make dictionary for appendix figures
 figureDict = {}
-Dictin = open(inputPath+infile+'.txt','r')
+Dictin = open(inputPath+input+'.txt','r')
 
 # Get first line
 cols = Dictin.readline()
@@ -115,21 +115,17 @@ for line in Dictin:
 # figureDict = {'SIMR-2': figureDict['SIMR-2']}
 
 # Create an outfile for storing maxes
-fout = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Maxes- '+infile+'.txt','w')
+fout = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Maxes- '+input+'.txt','w')
 
-# Create an outfile for storing exceedances
-foutExceedance = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Exceedance- '+infile+'.txt','w')
-
-# Create arrays for tracking exceedances and the results
+# Create an outfile for storing maxes
+foutExceedance = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Exceedance- '+input+'.txt','w')
 exceedance = []
-Results = []
-
 
 # Create an outfile for defining active locations
-foutActive = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Active- '+infile+'.txt','w')
+foutActive = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Active- '+input+'.txt','w')
 
 # Create an outfile for defining active locations
-foutSubstantial = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Substantial Data- '+infile+'.txt','w')
+foutSubstantial = open(path+os.sep+'Python'+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'Substantial Data- '+input+'.txt','w')
 subNum = []
 
 # ------------------------------------------------------
@@ -144,67 +140,7 @@ for location in figureDict:
 
 	print('Working on '+location)
 
-	# ------------------------------------------------------
-	# Query out Cr(VI) data
-	sql = "SELECT SAMPLE_DATE, REPORT_RESULT AS Data, DETECTED, FILTERED FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND PARAMETER_CODE = 'Cr(VI)' ORDER BY SAMPLE_DATE"
-	dataVI = DB_get(sql)
-		
-	# Initialize arrays
-	dateVI = []
-	resultVI = []
-	NDVI = []
-	FVI = []
-	daysNDVI = []
-	dataNDVI = []
-	daysFVI = []
-	dataFVI = []
-
-	# Loop through data
-	for row in dataVI:
-		
-		# Check for ND = 10 condition
-		if row[2] == 'N' and float(row[1]) == 10.0:
-			continue
-			
-		# Append values
-		dateVI.append(row[0])
-		resultVI.append(float(row[1]))
-		NDVI.append(row[2])
-		FVI.append(row[3])
-		
-		# Check for non-detects
-		if row[2] == 'N':
-			daysNDVI.append(row[0])
-			dataNDVI.append(float(row[1]))
-		# Check for filtering
-		if row[3] == 'Y':
-			daysFVI.append(row[0])
-			dataFVI.append(float(row[1]))
-			
-	# Check if result has values
-	if resultVI == []:
-		maxResultVI = 'No Data'
-		maxDateVI = 'No Data'
-		maxNDVI = 'No Data'
-		maxFVI = 'No Data'
-		lastVI = 'No Data'
-		lastDateVI = 'No Data'
-	else:
-		# Append to total results
-		for item in resultVI:
-			Results.append(item)
-		
-		# Get max
-		maxResultVI = max(resultVI)
-		maxIndexVI = resultVI.index(maxResultVI)
-		maxDateVI = dateVI[maxIndexVI]
-		maxNDVI = NDVI[maxIndexVI]
-		maxFVI = FVI[maxIndexVI]
-		lastVI = resultVI[-1]
-		lastDateVI = dateVI[-1]
-		
-	# ------------------------------------------------------
-	# Query out Cr data
+	# Query out data
 	sql = "SELECT SAMPLE_DATE, REPORT_RESULT AS Data, DETECTED, FILTERED FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND PARAMETER_CODE = 'Cr' ORDER BY SAMPLE_DATE"
 	data = DB_get(sql)
 		
@@ -221,10 +157,6 @@ for location in figureDict:
 	# Loop through data
 	for row in data:
 		
-		# # Check for ND = 10 condition
-		# if row[2] == 'N' and float(row[1]) == 10.0:
-			# continue
-			
 		# Append values
 		date.append(row[0])
 		result.append(float(row[1]))
@@ -253,10 +185,6 @@ for location in figureDict:
 		last = 'No Data'
 		lastDate = 'No Data'
 	else:
-		# Append to total results
-		for item in result:
-			Results.append(item)
-		
 		# Get max
 		maxResult = max(result)
 		maxIndex = result.index(maxResult)
@@ -268,53 +196,17 @@ for location in figureDict:
 		
 		# Write exceedances to outfile
 		if float(maxResult) > SLV:
-			
-			# ** Need recursion so that it pops back until there is either no ND or no exceedance
-			# # Check that it is not a non-detect value
-			# if maxND == 'N':
-				# # Check that there is more than 1 data point
-				# if len(result) > 1:
-				# # Copy result so as not to alter it
-					# sortedResult = result
-					# # Sort sortedResult
-					# sortedResult.sort()
-					# # Find location of maxResult
-					# index = sortedResult.index(maxResult)
-					# # Get next biggest
-					# nextBig = sortedResult[index-1]
-					# # Check if next largest value is exceedance
-					# if nextBig > SLV:
-						# # Find index in original result array
-						# nextIndex = result.index(nextBig)
-						# # Set nextND
-						# nextND = ND[nextIndex]
-						# # Check if it is ND
-						# if nextND == 'N':
-							# print(location, '- ', nextBig, nextND)
-				
-				# # print(location, '- ', result)
-							# yes = input('Proceed?')
-			# Run another query to verify the exceedance is not a ND
-			sql = "SELECT REPORT_RESULT AS Data FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND REPORT_RESULT > "+str(SLV)+"AND DETECTED = 'Y'"
-			exceedanceResult = DB_get(sql)
-			
-			# Check if it returns results
-			if exceedanceResult != []:
-				
-				# Write to file
-				foutExceedance.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxDate)+'\t'+str(maxResult)+'\t'+maxND+'\t'+maxF+'\t'+str(len(result))+'\n')
-				
-				# Append to exceedance list
-				for item in exceedanceResult:
-					exceedance.append(item[0])
+			foutExceedance.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxDate)+'\t'+str(maxResult)+'\t'+maxND+'\t'+maxF+'\t'+str(len(result))+'\n')
+			# Append to exceedance list
+			for item in result:
+				exceedance.append(item)
 
 		# Check if active
 		if datetime.datetime(max(date).year, max(date).month, max(date).day) > datetime.datetime.strptime('2015-01-01', '%Y-%m-%d'):
 			foutActive.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\n')
 		
 	# Write maxes to an outfile
-	# fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(len(result))+'\n')
-	fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+	fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(len(result))+'\n')
 	
 	# Check if number of data is substantial
 	if len(result) > subThreshold:
@@ -326,13 +218,11 @@ for location in figureDict:
 print('Ave # of samples- ', statistics.mean(subNum))
 print('Ave exceedance- ', statistics.mean(exceedance))
 
+# plt.hist(exceedance, bins=1200)
+sns.distplot(exceedance, hist = False, kde = True)
+# plt.show()
+
 fout.close()
 foutExceedance.close()
 foutActive.close()
 foutSubstantial.close()
-
-# plt.hist(exceedance, bins=1200)
-sns.distplot(exceedance, hist = False, kde = True, label='Exceedances')
-sns.distplot(Results, hist = False, kde = True, label='All results')
-plt.legend()
-plt.show()

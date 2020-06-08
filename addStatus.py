@@ -58,13 +58,13 @@ def getMax(filePath):
 		# Split up input line
 		cols = line.split('\t')
 		if cols[0] not in wellInfo:
-			wellInfo[cols[0]] = {'Date': cols[3], 'Max': cols[4]}
+			wellInfo[cols[0]] = {'Max': cols[3], 'Date':cols[4], 'Last': cols[7], 'Last Date': cols[8], 'Max VI': cols[9], 'Date VI':cols[10], 'Last VI': cols[11], 'Last Date VI': cols[12],'Number': cols[13][:-1]}
 	return wellInfo
 
 def dictOut(dict, path):
 	fout = open(path, 'w')
 	# Write header line
-	fout.write(headers[:-1]+'\tMax Date\tMax\tActive\tExceedance\tSubstantial Data\n')
+	fout.write(headers[:-1]+'\tMax\tMax Date\tLast\tLast Date\tMax Hex\tMax Date Hex\tLast Hex\tLast Date Hex\tLength\tActive\tExceedance\tSubstantial Data\n')
 	# Loop through dictionary to write to file
 	for item in dict:
 		fout.write(dict[item])
@@ -80,7 +80,7 @@ def addToDict(inFile, source, reasonCode):
 def addMax(inFile, source):
 	for location in wellData:
 		if location in inFile:
-			wellData[location] = wellData[location][:-1]+'\t'+inFile[location]['Date']+'\t'+inFile[location]['Max']+'\n'
+			wellData[location] = wellData[location][:-1]+'\t'+inFile[location]['Max']+'\t'+inFile[location]['Date']+'\t'+inFile[location]['Last']+'\t'+inFile[location]['Last Date']+'\t'+inFile[location]['Max VI']+'\t'+inFile[location]['Date VI']+'\t'+inFile[location]['Last VI']+'\t'+inFile[location]['Last Date VI']+'\t'+inFile[location]['Number']+'\n'
 			
 # ------------------------------------------------------
 # INPUTS
@@ -154,38 +154,38 @@ substantialInfo = getLocations(path+os.sep+'Locations'+os.sep+'Outputs'+os.sep+'
 # Add locations from substantial to the wellInfo dictionary
 addToDict(substantialInfo, wellData, 'Substantial')
 
-# ------------------------------------------------------
-# Update watershed column
-# ------------------------------------------------------
+# # ------------------------------------------------------
+# # Update watershed column
+# # ------------------------------------------------------
 
-#Open Shapefile with shapes to check points against
-sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
+# #Open Shapefile with shapes to check points against
+# sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
 
-#Read records in shapefile
-sfRec = sf.records() 
+# #Read records in shapefile
+# sfRec = sf.records() 
 
-n = 0
-coorDict = {}
-matplotDict = []
-watershedFinal = {}
+# n = 0
+# coorDict = {}
+# matplotDict = []
+# watershedFinal = {}
 
-#Iterate through shapes in shapefile
-for shape in sf.shapeRecords(): 
-	#Initially for use in matplotlib to check shapefile
-	x = [point[0] for point in shape.shape.points[:]] 
-	#Initially for use in matplotlib to check shapefile
-	y = [point[1] for point in shape.shape.points[:]] 
+# #Iterate through shapes in shapefile
+# for shape in sf.shapeRecords(): 
+	# #Initially for use in matplotlib to check shapefile
+	# x = [point[0] for point in shape.shape.points[:]] 
+	# #Initially for use in matplotlib to check shapefile
+	# y = [point[1] for point in shape.shape.points[:]] 
 
-	for point in x:
-		#Convert coordinates to be read by Shapely pkg
-		matplotDict.append((x[x.index(point)],y[x.index(point)])) 
+	# for point in x:
+		# #Convert coordinates to be read by Shapely pkg
+		# matplotDict.append((x[x.index(point)],y[x.index(point)])) 
 
-	#Store shape in dictionary with key of watershedcipality
-	watershedFinal[sfRec[n][1]] = Polygon(matplotDict) 
+	# #Store shape in dictionary with key of watershedcipality
+	# watershedFinal[sfRec[n][1]] = Polygon(matplotDict) 
 
-	#refresh coordinate store for next shape   
-	matplotDict = [] 
-	n += 1 
+	# #refresh coordinate store for next shape   
+	# matplotDict = [] 
+	# n += 1 
 
 # ------------------------------------------------------
 # Write to outfiles

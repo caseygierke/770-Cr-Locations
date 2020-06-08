@@ -1,4 +1,4 @@
-# TablesOut.py
+# TablesOutExcluded.py
 
 # This uses a python connection to SQL Server to query out
 # informations for the LWA chromium report table
@@ -117,85 +117,85 @@ path = path[:find_last(path,os.sep)]
 # Get DB credentials
 server = getCredentials()
 
-# Define aquifer
-aquifer = 'Alluvial'
+# # Define aquifer
+# aquifer = 'Alluvial'
 
 # Define watersheds list
 watersheds = ['Sandia', 'Upper Mortendad', 'Lower Mortendad', 'Los Alamos', 'Pajarito']
 
-# Define aquifer list
-aquifers = ['Alluvial', 'Intermediate', 'Regional', 'Spring', 'Undefined']
+# # Define aquifer list
+# aquifers = ['Alluvial', 'Intermediate', 'Regional', 'Spring', 'Undefined']
 
-# Loop through aquifers
-for aquifer in aquifers:
-	# Initialize aquiferInfo array
-	aquiferInfo = []
-	appendixInfo = []
-	excludeInfo = []
+# # Loop through aquifers
+# for aquifer in aquifers:
+# Initialize aquiferInfo array
+# aquiferInfo = []
+# appendixInfo = []
+excludeInfo = []
+
+# Loop through watersheds
+for watershed in watersheds:
 	
-	# Loop through watersheds
-	for watershed in watersheds:
-		
-		# ------------------------------------------------------
-		# Query out main aquifer table
-		sql = """
-		SELECT * FROM
+	# # ------------------------------------------------------
+	# # Query out main aquifer table
+	# sql = """
+	# SELECT * FROM
+		# (SELECT * FROM
+			# (SELECT * 
+			# FROM chromium_locations 
+			# WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
+		# WHERE watershed = '"""+watershed+"""') AS WATERSHED
+	# WHERE active = 'Active' 
+	# -- OR exceedance = 'Exceedance' 
+	# ORDER BY location_id
+	# """
+
+	# for row in DB_get(sql):
+		# aquiferInfo.append(row)
+
+	# # ------------------------------------------------------
+	# # Query out appendix aquifer table
+	# sql = """
+	# SELECT * FROM
+		# (SELECT * FROM
+			# (SELECT * FROM
+				# (SELECT * 
+				# FROM chromium_locations 
+				# WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
+			# WHERE watershed = '"""+watershed+"""') AS WATERSHED
+		# WHERE active IS NULL) AS INACTIVE
+	# WHERE substantial_data = 'Substantial' 
+	# OR exceedance = 'Exceedance' 
+	# ORDER BY location_id
+	# """
+
+	# for row in DB_get(sql):
+		# appendixInfo.append(row)
+
+	# ------------------------------------------------------
+	# Query out excluded aquifer table
+	sql = """
+	SELECT * FROM
+		(SELECT * FROM
 			(SELECT * FROM
-				(SELECT * 
-				FROM chromium_locations 
-				WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
+				
+				chromium_locations 
+				
 			WHERE watershed = '"""+watershed+"""') AS WATERSHED
-		WHERE active = 'Active' 
-		-- OR exceedance = 'Exceedance' 
-		ORDER BY location_id
-		"""
+		WHERE active IS NULL) AS INACTIVE
+	WHERE substantial_data IS NULL
+	AND exceedance IS NULL
+	ORDER BY aquifer, location_id
+	"""
 
-		for row in DB_get(sql):
-			aquiferInfo.append(row)
+	for row in DB_get(sql):
+		excludeInfo.append(row)
 
-		# ------------------------------------------------------
-		# Query out appendix aquifer table
-		sql = """
-		SELECT * FROM
-			(SELECT * FROM
-				(SELECT * FROM
-					(SELECT * 
-					FROM chromium_locations 
-					WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
-				WHERE watershed = '"""+watershed+"""') AS WATERSHED
-			WHERE active IS NULL) AS INACTIVE
-		WHERE substantial_data = 'Substantial' 
-		OR exceedance = 'Exceedance' 
-		ORDER BY location_id
-		"""
+# Check that destination directories exist and create if not
+if not os.path.exists(path+os.sep+'Locations'+os.sep+'Tables'+os.sep):
+	os.makedirs(path+os.sep+'Locations'+os.sep+'Tables'+os.sep)
 
-		for row in DB_get(sql):
-			appendixInfo.append(row)
-
-		# ------------------------------------------------------
-		# Query out excluded aquifer table
-		sql = """
-		SELECT * FROM
-			(SELECT * FROM
-				(SELECT * FROM
-					(SELECT * 
-					FROM chromium_locations 
-					WHERE aquifer = '"""+aquifer+"""') AS AQUIFER
-				WHERE watershed = '"""+watershed+"""') AS WATERSHED
-			WHERE active IS NULL) AS INACTIVE
-		WHERE substantial_data IS NULL
-		AND exceedance IS NULL
-		ORDER BY location_id
-		"""
-
-		for row in DB_get(sql):
-			excludeInfo.append(row)
-
-	# Check that destination directories exist and create if not
-	if not os.path.exists(path+os.sep+'Locations'+os.sep+'Tables'+os.sep):
-		os.makedirs(path+os.sep+'Locations'+os.sep+'Tables'+os.sep)
-
-	tableOut(aquiferInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+aquifer+'.txt')
-	tableOut(appendixInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+aquifer+'- Appendix.txt')
-	tableOut(excludeInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+aquifer+'- Excluded.txt')
+# tableOut(aquiferInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+aquifer+'.txt')
+# tableOut(appendixInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+aquifer+'- Appendix.txt')
+tableOut(excludeInfo, path+os.sep+'Locations'+os.sep+'Tables'+os.sep+'Excluded.txt')
 
