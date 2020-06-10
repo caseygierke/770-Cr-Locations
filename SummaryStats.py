@@ -251,6 +251,7 @@ for location in figureDict:
 		maxND = 'No Data'
 		maxF = 'No Data'
 		last = 'No Data'
+		lastND = 'No Data'
 		lastDate = 'No Data'
 	else:
 		# Append to total results
@@ -264,6 +265,7 @@ for location in figureDict:
 		maxND = ND[maxIndex]
 		maxF = F[maxIndex]
 		last = result[-1]
+		lastND = ND[-1]
 		lastDate = date[-1]
 		
 		# Write exceedances to outfile
@@ -293,9 +295,29 @@ for location in figureDict:
 	# Check if max is ND
 	if maxResult == 'No Data':
 		fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
-	elif maxND == 'Y':
+	# Deal with last data ND
+	if lastND == 'N':
+		print(location, 'has ND for last value, querying for data that is detected')
+		
+		# Run a new query for maxes
+		sql = "SELECT SAMPLE_DATE, REPORT_RESULT AS Data, DETECTED, FILTERED FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND DETECTED = 'Y' ORDER BY SAMPLE_DATE DESC"
+		lastQueryResult = DB_get(sql)
+	
+		# Write maxes to an outfile
+		if lastQueryResult == []:
+		
+			last = 'No Detect Data'
+			lastDate = 'No Detect Data'
+		
+		else:
+			last = lastQueryResult[0][1]
+			lastDate = lastQueryResult[0][0]
+			
+			# lastQueryResult[10]
+			
+	if maxND == 'Y':
 		fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
-	elif maxResult != 'No Data' and maxND == 'N':
+	if maxResult != 'No Data' and maxND == 'N':
 		print(location, 'has ND for max value, querying for data that is detected')
 		
 		# Run a new query for maxes
