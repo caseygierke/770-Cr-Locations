@@ -48,6 +48,8 @@ def writeExhibit(rowText, rowNum, sheet):
 	# Loop through list to write to file
 	column = 1
 	for item in rowText:
+		if item == 'No Detect Data':
+			item = 'NA'
 		# Convert dates
 		if column == 4 and item != '':
 			# Convert to datetime object
@@ -55,7 +57,7 @@ def writeExhibit(rowText, rowNum, sheet):
 			# Convert to formatted string
 			# item = datetime.strftime(item, '%m/%d/%y')
 			item = str(item.month) + "/" + str(item.day) + "/" + str(item.year)[-2:]
-		if column == 8 and item != 'No Data':
+		if column == 8 and item != 'No Data' and item != 'NA':
 			# Convert to datetime object
 			item = datetime.strptime(item, '%Y-%m-%d')
 			# Convert to formatted string
@@ -77,7 +79,7 @@ def fontStyle(cell):
 	cell.border = border
 	
 def numChop(num):
-	if num == 'Multiple' or num == 'No Data':
+	if num == 'Multiple' or num == 'No Data' or num == 'No Detect Data':
 		return num
 	if num != '': 
 		try:

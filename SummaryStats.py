@@ -269,31 +269,6 @@ for location in figureDict:
 		# Write exceedances to outfile
 		if float(maxResult) > SLV:
 			
-			# ** Need recursion so that it pops back until there is either no ND or no exceedance
-			# # Check that it is not a non-detect value
-			# if maxND == 'N':
-				# # Check that there is more than 1 data point
-				# if len(result) > 1:
-				# # Copy result so as not to alter it
-					# sortedResult = result
-					# # Sort sortedResult
-					# sortedResult.sort()
-					# # Find location of maxResult
-					# index = sortedResult.index(maxResult)
-					# # Get next biggest
-					# nextBig = sortedResult[index-1]
-					# # Check if next largest value is exceedance
-					# if nextBig > SLV:
-						# # Find index in original result array
-						# nextIndex = result.index(nextBig)
-						# # Set nextND
-						# nextND = ND[nextIndex]
-						# # Check if it is ND
-						# if nextND == 'N':
-							# print(location, '- ', nextBig, nextND)
-				
-				# # print(location, '- ', result)
-							# yes = input('Proceed?')
 			# Run another query to verify the exceedance is not a ND
 			sql = "SELECT REPORT_RESULT AS Data FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND REPORT_RESULT > "+str(SLV)+"AND DETECTED = 'Y'"
 			exceedanceResult = DB_get(sql)
@@ -313,9 +288,42 @@ for location in figureDict:
 			print(location)
 			foutActive.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\n')
 		
-	# Write maxes to an outfile
-	# fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(len(result))+'\n')
-	fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+	# Maxes
+	
+	# Check if max is ND
+	if maxResult == 'No Data':
+		fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+	elif maxND == 'Y':
+		fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+	elif maxResult != 'No Data' and maxND == 'N':
+		print(location, 'has ND for max value, querying for data that is detected')
+		
+		# Run a new query for maxes
+		sql = "SELECT SAMPLE_DATE, REPORT_RESULT AS Data, DETECTED, FILTERED FROM Chromium_Flagged WHERE LOCATION_ID = '"+location+"' AND DETECTED = 'Y' ORDER BY Data DESC"
+		maxQueryResult = DB_get(sql)
+	
+		# Write maxes to an outfile
+		if maxQueryResult == []:
+		
+			maxResult = 'No Detect Data'
+			maxDate = 'No Detect Data'
+			maxND = 'No Detect Data'
+			maxF = 'No Detect Data'
+			fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+			# fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\tNA\tNA\tNA\tNA\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+		else:
+			# maxQueryResult[0][0]
+			maxResult = maxQueryResult[0][1]
+			maxDate = maxQueryResult[0][0]
+			maxND = maxQueryResult[0][2]
+			maxF = maxQueryResult[0][3]
+			
+			# maxF[10]
+			
+			fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+			# fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
+	
+	# fout.write(location+'\t'+figureDict[location]['Long']+'\t'+figureDict[location]['Lat']+'\t'+str(maxResult)+'\t'+str(maxDate)+'\t'+maxND+'\t'+maxF+'\t'+str(last)+'\t'+str(lastDate)+'\t'+str(maxResultVI)+'\t'+str(maxDateVI)+'\t'+str(lastVI)+'\t'+str(lastDateVI)+'\t'+str(len(result))+'\n')
 	
 	# Check if number of data is substantial
 	if len(result) > subThreshold:
