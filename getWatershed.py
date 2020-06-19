@@ -18,6 +18,7 @@ from shapely.geometry import Point
 # import csv
 from shapely.geometry.polygon import Polygon
 import os
+# import numpy as np
 
 # ------------------------------------------------------
 # DEFINE FUNCTIONS
@@ -49,8 +50,9 @@ locationFile = open(path+os.sep+'Outputs'+os.sep+fileName + '.txt', 'r')
 fout = open(path+os.sep+'Outputs'+os.sep+'Compiled- Narrowed- For DB.txt', 'w')
 
 #Open Shapefile with shapes to check points against
-# sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
-sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds_IEcD") 
+sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
+# # IEc file takes a very long time and does not populate all the fields
+# sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds_IEcD-Lat-Long") 
 
 #Read records in shapefile
 sfRec = sf.records() 
@@ -67,6 +69,19 @@ for shape in sf.shapeRecords():
 	#Initially for use in matplotlib to check shapefile
 	y = [point[1] for point in shape.shape.points[:]] 
 
+	# Check if canyon in sfRec[n][1]
+	if 'Canyon' in sfRec[n][1]:
+		print('Changing '+sfRec[n][1])
+		sfRec[n][1] = sfRec[n][1][:-7]
+	
+	# Check if polygon already exists
+	if sfRec[n][1] in watershedFinal:
+		
+		print(sfRec[n][1]+' exists, adding to it')
+		
+		# Get existing array
+		matplotDict = list(watershedFinal[sfRec[n][1]].exterior.coords)
+		
 	for point in x:
 		#Convert coordinates to be read by Shapely pkg
 		matplotDict.append((x[x.index(point)],y[x.index(point)])) 

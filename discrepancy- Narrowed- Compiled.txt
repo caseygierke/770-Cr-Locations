@@ -264,10 +264,10 @@ LAWS-01 S3	['Intermediate']							['188']	['198']				['Tb4']				Aquifer- MW, Geo
 R-19 S1									['843.6']								Screen Bottom [ft]- MW
 SWA-4-11						['9.3']											Total Well Depth [ft]- MW
 SWA-1-2						['13.17']											Total Well Depth [ft]- MW
-PM-2			['-106.262548400000', '-106.262548000000']														Longitude- CD, Longitude- CD
 18-01254		['35.840050500000']															Latitude- CD
 CrEX-2			['-106.260735200000']														Longitude- CD
 CrIN-1		['35.859689400000']															Latitude- CD
 CrIN-5			['-106.255851600000']														Longitude- CD
 CRPZ-4		['35.861149800000']															Latitude- CD
 MCO-7.5			['-106.266745600000']														Longitude- CD
+PM-2			['-106.262548400000', '-106.262548000000']														Longitude- CD, Longitude- CD

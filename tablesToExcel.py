@@ -1,5 +1,8 @@
 # tablesToExcel.py
 
+# With Notepad++, use F5 then copy this into box
+# C:\Users\Casey\Anaconda3\python.exe -i "$(FULL_CURRENT_PATH)"
+
 # ------------------------------------------------------
 # IMPORTS
 # ------------------------------------------------------
@@ -192,7 +195,7 @@ for aquifer in aquifers:
 		exhibitSheet.row_dimensions[2].height = 46
 		
 		# Define rowWidths
-		rowWidths = [11.29, 10.14, 12, 9.15, 7, 13.43, 8.43, 8.43]
+		rowWidths = [12.25, 10.14, 12, 9.15, 7, 16.25, 8.43, 8.43]
 
 		# Adjust columns widths and wrap header text
 		colNum = 0

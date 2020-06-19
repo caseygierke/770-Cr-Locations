@@ -1,10 +1,10 @@
-00-01535	-106.29734	35.88079	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+00-01535	-106.29734	35.88079	400.0	1994-03-31	Y	N	400.0	1994-03-31	No Data	No Data	No Data	No Data	1
 01-22571	-106.27721	35.86356	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-02-01021	-106.29293	35.87639	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-02-01022	-106.28971	35.87621	12.2	2000-06-22	Y	Y	12.2	2000-06-22	No Data	No Data	No Data	No Data	2
-02-01075	-106.28709	35.87543	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-02-01076	-106.2872	35.87552	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-02-01077	-106.28991	35.87642	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+02-01021	-106.29293	35.87639	85.0	1994-06-15	Y	N	5.0	1994-10-26	No Data	No Data	No Data	No Data	6
+02-01022	-106.28971	35.87621	12.2	2000-06-22	Y	Y	12.2	2000-06-22	No Data	No Data	No Data	No Data	8
+02-01075	-106.28709	35.87543	5300.0	1994-10-28	Y	N	5300.0	1994-10-28	No Data	No Data	No Data	No Data	4
+02-01076	-106.2872	35.87552	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
+02-01077	-106.28991	35.87642	9.0	1994-10-25	Y	Y	7.0	1994-10-25	No Data	No Data	No Data	No Data	4
 02-01078	-106.28709	35.87543	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 03-02664	-106.33013	35.87374	7.2	1999-12-17	Y	Y	7.2	1999-12-17	No Data	No Data	No Data	No Data	2
 03-02667	-106.33022	35.87378	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
@@ -14,32 +14,32 @@
 03-24548	-106.33008	35.87374	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 03-B-10	-106.33012	35.87372	15.6	2006-08-23	Y	N	9.12	2009-09-14	No Data	No Data	No Data	No Data	28
 03-B-13	-106.33008	35.87374	16.5	2006-08-24	Y	N	0.204	2017-11-01	No Data	No Data	No Data	No Data	65
-03-B-9	-106.33015	35.87378	8.5	2007-07-11	Y	N	3.7	2007-09-17	No Data	No Data	No Data	No Data	4
+03-B-9	-106.33015	35.87378	8.5	2007-07-11	Y	N	1.4	2007-09-17	No Data	No Data	No Data	No Data	4
 03-MW-1	-106.33013	35.87374	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 06-22848	-106.26487	35.87533	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 11-22513	-106.25154	35.86288	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 14-02-19968	-106.28564	35.86177	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
 18-01023	-106.25196	35.83233	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 18-01024	-106.25194	35.83245	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01060	-106.27114	35.84426	322.0	2000-10-17	Y	N	322.0	2000-10-17	No Data	No Data	No Data	No Data	10
-18-01063	-106.27125	35.84429	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01135	-106.2688	35.8421	80.8	2000-10-17	Y	N	75.4	2001-11-19	No Data	No Data	No Data	No Data	10
-18-01136	-106.26871	35.84201	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01165	-106.26921	35.83904	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01166	-106.26924	35.83899	24.5	2000-10-17	Y	N	24.5	2000-10-17	No Data	No Data	No Data	No Data	11
+18-01060	-106.27114	35.84426	322.0	2000-10-17	Y	N	322.0	2000-10-17	No Data	No Data	No Data	No Data	12
+18-01063	-106.27125	35.84429	11.1	1994-08-08	Y	N	11.1	1994-08-08	No Data	No Data	No Data	No Data	1
+18-01135	-106.2688	35.8421	80.8	2000-10-17	Y	N	75.4	2001-11-19	No Data	No Data	No Data	No Data	12
+18-01136	-106.26871	35.84201	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+18-01165	-106.26921	35.83904	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+18-01166	-106.26924	35.83899	24.5	2000-10-17	Y	N	24.5	2000-10-17	No Data	No Data	No Data	No Data	13
 18-01195	-106.26475	35.83898	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01196	-106.26467	35.83895	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01233	-106.26513	35.83966	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01234	-106.26507	35.83964	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01254	-106.26633	35.84005	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01255	-106.26622	35.84011	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01275	-106.2649	35.84031	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01684	-106.2589	35.83641	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-01685	-106.25166	35.83237	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-02013	-106.2688	35.84249	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-02014	-106.26869	35.84231	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-02015	-106.26864	35.8423	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-18-02016	-106.2686	35.84234	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+18-01196	-106.26467	35.83895	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+18-01233	-106.26513	35.83966	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+18-01234	-106.26507	35.83964	1110.0	1995-08-03	Y	N	1110.0	1995-08-03	No Data	No Data	No Data	No Data	2
+18-01254	-106.26633	35.84005	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+18-01255	-106.26622	35.84011	80.5	1995-08-03	Y	N	80.5	1995-08-03	No Data	No Data	No Data	No Data	2
+18-01275	-106.2649	35.84031	6.38	1995-08-04	Y	N	6.38	1995-08-04	No Data	No Data	No Data	No Data	2
+18-01684	-106.2589	35.83641	39.3	1995-08-03	Y	N	39.3	1995-08-03	No Data	No Data	No Data	No Data	2
+18-01685	-106.25166	35.83237	983.0	1995-08-03	Y	N	983.0	1995-08-03	No Data	No Data	No Data	No Data	1
+18-02013	-106.2688	35.84249	5.6	1995-04-20	Y	N	5.6	1995-04-20	No Data	No Data	No Data	No Data	6
+18-02014	-106.26869	35.84231	21.1	1995-04-20	Y	N	21.1	1995-04-20	No Data	No Data	No Data	No Data	6
+18-02015	-106.26864	35.8423	5.4	1995-04-20	Y	N	5.4	1995-04-20	No Data	No Data	No Data	No Data	6
+18-02016	-106.2686	35.84234	3.2	1995-04-20	Y	N	3.2	1995-04-20	No Data	No Data	No Data	No Data	7
 18-02023	-106.2653	35.83999	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 18-02024	-106.26524	35.8397	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 18-10010	-106.26443	35.83885	20.0	1998-03-23	Y	N	15.8	2001-11-19	No Data	No Data	No Data	No Data	20
@@ -61,35 +61,35 @@
 18-MW-17	-106.2589	35.83641	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 18-MW-18	-106.25166	35.83237	15.0	2007-03-19	Y	N	7.76	2010-07-26	No Data	No Data	No Data	No Data	38
 18-MW-8	-106.26924	35.83899	3.8	2008-06-16	Y	Y	2.78	2009-09-08	No Data	No Data	No Data	No Data	28
-18-MW-9	-106.26507	35.83964	2.8	2006-12-11	Y	Y	1.5	2008-09-11	No Data	No Data	No Data	No Data	28
+18-MW-9	-106.26507	35.83964	2.8	2006-12-11	Y	N	1.5	2008-09-11	No Data	No Data	No Data	No Data	28
 20-02-20857	-106.25871	35.83635	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-21-01682	-106.27507	35.87418	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-21-01811	-106.27357	35.87787	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-21-01812	-106.27161	35.87765	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	8
+21-01682	-106.27507	35.87418	21.0	1993-11-04	Y	N	21.0	1993-11-04	No Data	No Data	No Data	No Data	1
+21-01811	-106.27357	35.87787	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+21-01812	-106.27161	35.87765	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	11
 23-02-20858	-106.22471	35.8239	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 28-22573	-106.25482	35.86015	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 32-02-20856	-106.24872	35.83095	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 33-22850	-106.27368	35.86062	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 34-22851	-106.23927	35.84825	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 35-02371	-106.28734	35.8622	32.2	1997-04-30	Y	N	32.2	1997-04-30	No Data	No Data	No Data	No Data	1
-36-02020	-106.25843	35.83716	48.2	2001-11-19	Y	N	48.2	2001-11-19	No Data	No Data	No Data	No Data	1
-36-02021	-106.24567	35.83015	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-36-02022	-106.23088	35.82478	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+36-02020	-106.25843	35.83716	48.2	2001-11-19	Y	N	48.2	2001-11-19	No Data	No Data	No Data	No Data	7
+36-02021	-106.24567	35.83015	55.3	1995-01-31	Y	N	19.1	1995-04-19	No Data	No Data	No Data	No Data	5
+36-02022	-106.23088	35.82478	5.4	1995-04-20	Y	N	5.4	1995-04-20	No Data	No Data	No Data	No Data	5
 36-2020	-106.25843	35.83716	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 3MAO-1a	-106.29784	35.84803	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 3MAO-2	-106.27238	35.83915	5.56	2010-06-07	Y	N	5.56	2010-06-07	No Data	No Data	No Data	No Data	18
-41-01002	-106.29614	35.87655	22.3	2000-06-21	Y	N	2.3	2000-08-31	No Data	No Data	No Data	No Data	8
-41-01003	-106.30272	35.87704	1.9	2000-06-22	Y	N	0.37	2001-06-18	No Data	No Data	No Data	No Data	16
-41-01004	-106.31164	35.87906	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-41-01045	-106.3353	35.87883	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-73-01005	-106.27206	35.88071	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+41-01002	-106.29614	35.87655	22.3	2000-06-21	Y	N	2.3	2000-08-31	No Data	No Data	No Data	No Data	15
+41-01003	-106.30272	35.87704	1.9	2000-06-22	Y	N	0.37	2001-06-18	No Data	No Data	No Data	No Data	24
+41-01004	-106.31164	35.87906	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
+41-01045	-106.3353	35.87883	66.0	1994-06-13	Y	N	66.0	1994-06-13	No Data	No Data	No Data	No Data	4
+73-01005	-106.27206	35.88071	14.1	1995-03-30	Y	N	14.1	1995-03-30	No Data	No Data	No Data	No Data	2
 73-01006	-106.27343	35.88177	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-73-01007	-106.27115	35.88153	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-73-01009	-106.27234	35.88147	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
-73-01011	-106.27034	35.88034	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+73-01007	-106.27115	35.88153	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+73-01009	-106.27234	35.88147	57.7	1995-02-24	Y	N	13.0	1995-03-30	No Data	No Data	No Data	No Data	3
+73-01011	-106.27034	35.88034	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 73-02428	-106.26933	35.8811	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 Anderson Spring	-106.33253	35.86861	9.3	2007-07-06	Y	Y	6.52	2010-08-09	No Data	No Data	No Data	No Data	26
-APCO-1	-106.22032	35.87295	2.26	2013-06-05	Y	Y	2.26	2013-06-05	No Data	No Data	No Data	No Data	37
+APCO-1	-106.22032	35.87295	2.26	2013-06-05	Y	Y	2.26	2013-06-05	No Data	No Data	No Data	No Data	45
 B1	-106.33013	35.87374	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 Barnstead millipore DI water	-106.31568	35.86773	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 CDBO-1	-106.25826	35.83978	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
@@ -97,8 +97,8 @@ CDBO-2	-106.25775	35.84022	No Data	No Data	No Data	No Data	No Data	No Data	No Da
 CDBO-3	-106.24912	35.83612	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 CDBO-4	-106.23294	35.83319	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 CDBO-5	-106.27306	35.85317	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-CDBO-6	-106.2642	35.85026	5.5	2008-02-11	Y	N	3.5	2010-08-02	No Data	No Data	No Data	No Data	33
-CDBO-7	-106.26018	35.84625	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	10
+CDBO-6	-106.2642	35.85026	5.5	2008-02-11	Y	N	3.5	2010-08-02	No Data	No Data	No Data	No Data	35
+CDBO-7	-106.26018	35.84625	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	11
 CDBO-8	-106.25379	35.84368	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 CDBO-9	-106.24426	35.83637	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 Core Hole 2	-106.29805	35.87467	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
@@ -129,11 +129,11 @@ DP-03-21641	-106.27232	35.87771	No Data	No Data	No Data	No Data	No Data	No Data	
 DP-03-21644	-106.272	35.87779	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 DP-03-21650	-106.27166	35.87758	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 ER ID #03-2664	-106.33013	35.87374	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-ER ID #18-01685	-106.25166	35.83237	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+ER ID #18-01685	-106.25166	35.83237	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 Fire Station 1	-106.32097	35.87643	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 Fire Station 2	-106.28702	35.88078	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 Fire Station 3	-106.20556	35.82715	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-G-5	-106.23684	35.82842	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	3
+G-5	-106.23684	35.82842	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	5
 Hamilton Bend Spring	-106.24248	35.88172	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 LA-00115	-106.22501	35.86713	1.7	2001-08-16	Y	N	1.7	2001-08-16	No Data	No Data	No Data	No Data	1
 LA-10008	-106.27624	35.87389	35.0	2000-07-25	Y	N	16.0	2000-07-25	No Data	No Data	No Data	No Data	2
@@ -141,37 +141,37 @@ LA-10035	-106.25822	35.87317	4.22	2002-06-05	Y	Y	3.93	2002-06-05	No Data	No Data
 LA-10066	-106.29457	35.87635	1.2	2001-06-25	Y	N	0.622	2002-06-04	No Data	No Data	No Data	No Data	6
 LA-10068	-106.24887	35.87216	1.5	2001-06-27	Y	Y	1.5	2001-06-27	No Data	No Data	No Data	No Data	4
 LA-10135	-106.21926	35.867	0.881	2002-08-16	Y	Y	0.881	2002-08-16	No Data	No Data	No Data	No Data	6
-LA-5.19 Spring	-106.23799	35.86981	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+LA-5.19 Spring	-106.23799	35.86981	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 LADP-3	-106.27507	35.87418	12.9	2008-01-24	Y	N	6.24	2017-09-27	No Data	No Data	No Data	No Data	22
-LAO-0.3	-106.30272	35.87704	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	11
-LAO-0.6	-106.29614	35.87655	5.7	2006-08-03	Y	N	3.2	2008-08-29	No Data	No Data	No Data	No Data	11
-LAO-0.7	-106.29457	35.87635	0.885	2003-07-09	Y	Y	0.885	2003-07-09	No Data	No Data	No Data	No Data	13
-LAO-0.8	-106.29293	35.87639	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAO-0.91	-106.28971	35.87621	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
-LAO-1	-106.2872	35.87552	17.0	2002-08-05	Y	N	5.22	2009-07-16	No Data	No Data	No Data	No Data	20
+LAO-0.3	-106.30272	35.87704	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	12
+LAO-0.6	-106.29614	35.87655	5.7	2006-08-03	Y	N	3.2	2008-08-29	No Data	No Data	No Data	No Data	12
+LAO-0.7	-106.29457	35.87635	0.885	2003-07-09	Y	Y	0.885	2003-07-09	No Data	No Data	No Data	No Data	14
+LAO-0.8	-106.29293	35.87639	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
+LAO-0.91	-106.28971	35.87621	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
+LAO-1	-106.2872	35.87552	17.0	2002-08-05	Y	N	5.22	2009-07-16	No Data	No Data	No Data	No Data	25
 LAO-1.1	-106.28151	35.87477	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 LAO-1.2	-106.27623	35.87389	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 LAO-1.6g	-106.26463	35.87168	10.8	2008-08-27	Y	Y	10.8	2008-08-27	No Data	No Data	No Data	No Data	30
 LAO-1.8	-106.26678	35.87197	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAO-2	-106.25948	35.87316	4.9	2007-07-23	Y	Y	2.61	2009-07-15	No Data	No Data	No Data	No Data	28
-LAO-3	-106.25812	35.87317	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAO-3a	-106.25822	35.87317	13.9	2003-09-17	Y	N	3.43	2018-06-18	No Data	No Data	No Data	No Data	35
-LAO-4	-106.24887	35.87216	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	8
-LAO-4.5	-106.23906	35.87039	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAO-4.5c	-106.23943	35.87036	3.6	2007-07-19	Y	N	1.0	2007-07-19	No Data	No Data	No Data	No Data	20
-LAO-5	-106.23047	35.86857	1.6	2007-08-03	Y	Y	1.6	2007-08-03	No Data	No Data	No Data	No Data	5
-LAO-6	-106.23041	35.86831	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAO-6a	-106.23041	35.86835	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	3
-LAO-B	-106.3353	35.87883	1.3	2005-05-10	Y	N	1.3	2005-05-10	No Data	No Data	No Data	No Data	36
-LAO-C	-106.31164	35.87906	1.02	2003-07-09	Y	Y	0.509	2004-06-03	No Data	No Data	No Data	No Data	24
-LAOI(a)-1.1	-106.28709	35.87543	2.67	2012-09-04	Y	Y	0.161	2013-08-15	No Data	No Data	No Data	No Data	30
+LAO-2	-106.25948	35.87316	4.9	2007-07-23	Y	Y	2.61	2009-07-15	No Data	No Data	No Data	No Data	33
+LAO-3	-106.25812	35.87317	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	9
+LAO-3a	-106.25822	35.87317	13.9	2003-09-17	Y	N	3.43	2018-06-18	No Data	No Data	No Data	No Data	41
+LAO-4	-106.24887	35.87216	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	11
+LAO-4.5	-106.23906	35.87039	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	6
+LAO-4.5c	-106.23943	35.87036	3.6	2007-07-19	Y	N	1.0	2007-07-19	No Data	No Data	No Data	No Data	24
+LAO-5	-106.23047	35.86857	1.6	2007-08-03	Y	Y	1.4	2007-08-03	No Data	No Data	No Data	No Data	5
+LAO-6	-106.23041	35.86831	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	8
+LAO-6a	-106.23041	35.86835	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	8
+LAO-B	-106.3353	35.87883	1.3	2005-05-10	Y	N	1.3	2005-05-10	No Data	No Data	No Data	No Data	40
+LAO-C	-106.31164	35.87906	1.02	2003-07-09	Y	Y	0.784	2004-06-03	No Data	No Data	No Data	No Data	30
+LAOI(a)-1.1	-106.28709	35.87543	7.4	1995-05-18	Y	N	0.161	2013-08-15	No Data	No Data	No Data	No Data	35
 LAOI-3.2	-106.25937	35.87308	5.0	2008-01-15	Y	N	2.34	2016-08-24	0.3	2006-04-19	0.3	2006-04-19	37
 LAOI-3.2 OB	-106.25937	35.87308	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 LAOI-3.2a	-106.25944	35.87318	5.6	2008-01-23	Y	Y	3.31	2018-09-06	1.6	2006-07-26	1.6	2006-07-26	37
 LAOI-3.2a OB	-106.25944	35.87318	1.0	2005-07-30	Y	N	1.0	2005-07-30	No Data	No Data	No Data	No Data	1
 LAOI-7	-106.23524	35.86901	5.43	2011-03-10	Y	N	3.02	2016-08-31	No Data	No Data	No Data	No Data	40
-LAOR-1	-106.28991	35.87642	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-LAUZ-1	-106.27357	35.87787	2.54	2001-11-13	Y	N	0.692	2002-05-22	No Data	No Data	No Data	No Data	32
+LAOR-1	-106.28991	35.87642	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
+LAUZ-1	-106.27357	35.87787	28.9	1995-06-21	Y	N	0.692	2002-05-22	No Data	No Data	No Data	No Data	34
 LAUZ-2	-106.27161	35.87765	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
 MCA-1	-106.29668	35.86578	17.1	2008-05-20	Y	N	2.8	2008-11-06	No Data	No Data	No Data	No Data	22
 MCA-2	-106.27133	35.86077	2.9	2007-02-28	Y	N	2.3	2007-06-05	No Data	No Data	No Data	No Data	10
@@ -181,17 +181,17 @@ MCO-0.6	-106.30545	35.86789	662.0	2010-07-02	Y	N	3.09	2016-05-19	No Data	No Data
 MCO-1	-106.30054	35.86509	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCO-13	-106.24744	35.85779	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCO-2	-106.29893	35.86502	275.0	2008-05-28	Y	N	10.6	2010-07-01	0.129703	2008-05-28	0.129703	2008-05-28	19
-MCO-3	-106.29406	35.8653	14.6	2009-08-12	Y	N	3.4	2010-02-02	No Data	No Data	No Data	No Data	17
-MCO-4	-106.28106	35.86407	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-MCO-4B	-106.27828	35.86382	6.69	2010-07-06	Y	Y	4.78	2010-07-06	No Data	No Data	No Data	No Data	38
-MCO-5	-106.27683	35.86339	5.76	2010-07-06	Y	Y	5.76	2010-07-06	No Data	No Data	No Data	No Data	49
-MCO-6	-106.27289	35.86194	4.81	2010-07-07	Y	N	4.81	2010-07-07	No Data	No Data	No Data	No Data	41
+MCO-3	-106.29406	35.8653	14.6	2009-08-12	Y	N	3.4	2010-02-02	No Data	No Data	No Data	No Data	19
+MCO-4	-106.28106	35.86407	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	5
+MCO-4B	-106.27828	35.86382	6.69	2010-07-06	Y	Y	4.78	2010-07-06	No Data	No Data	No Data	No Data	45
+MCO-5	-106.27683	35.86339	5.76	2010-07-06	Y	Y	5.76	2010-07-06	No Data	No Data	No Data	No Data	52
+MCO-6	-106.27289	35.86194	4.81	2010-07-07	Y	N	4.81	2010-07-07	No Data	No Data	No Data	No Data	55
 MCO-6.5A	-106.27217	35.8608	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCO-6.5B	-106.27178	35.86105	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-MCO-6B	-106.2729	35.86186	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	4
-MCO-7	-106.26991	35.86056	5.44	2010-07-07	Y	N	5.44	2010-07-07	No Data	No Data	No Data	No Data	48
-MCO-7.5	-106.26675	35.86037	4.69	2010-07-08	Y	Y	4.69	2010-07-08	0.559544	2008-05-28	0.559544	2008-05-28	36
-MCO-7A	-106.26996	35.86056	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	3
+MCO-6B	-106.2729	35.86186	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	6
+MCO-7	-106.26991	35.86056	5.44	2010-07-07	Y	N	5.44	2010-07-07	No Data	No Data	No Data	No Data	56
+MCO-7.5	-106.26675	35.86037	4.69	2010-07-08	Y	Y	4.69	2010-07-08	0.559544	2008-05-28	0.559544	2008-05-28	40
+MCO-7A	-106.26996	35.86056	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	7
 MCO-8	-106.26484	35.86062	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCO-8.2	-106.26253	35.86094	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MCOBT-4.4	-106.27102	35.86057	53.6	2002-04-22	Y	N	15.0	2005-03-29	No Data	No Data	No Data	No Data	7
@@ -223,11 +223,11 @@ MO-24232	-106.26707	35.85817	No Data	No Data	No Data	No Data	No Data	No Data	No 
 MT-1	-106.26739	35.86052	2.8	2005-04-22	Y	N	2.1	2005-09-16	No Data	No Data	No Data	No Data	4
 MT-2	-106.26484	35.86066	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 MT-3	-106.26497	35.86097	5.63	2010-07-09	Y	N	5.63	2010-07-09	No Data	No Data	No Data	No Data	22
-MT-4	-106.26302	35.86091	2.2	2007-03-13	Y	N	2.1	2007-03-13	No Data	No Data	No Data	No Data	5
+MT-4	-106.26302	35.86091	2.2	2007-03-13	Y	N	2.2	2007-03-13	No Data	No Data	No Data	No Data	7
 NPDES Outfall 01A001	-106.31929	35.87391	3.15	2014-05-01	Y	Y	3.15	2014-05-01	No Data	No Data	No Data	No Data	1
 NPDES Outfall 03A027	-106.31913	35.87397	1.21	2014-05-01	Y	Y	1.21	2014-05-01	No Data	No Data	No Data	No Data	1
 O-1	-106.21969	35.87079	15.0	2016-06-02	Y	Y	12.7	2019-12-17	5.5	2006-05-24	5.5	2006-05-24	42
-O-4	-106.26039	35.87288	7.61	2012-08-28	Y	Y	3.98	2019-12-17	4.1	2006-12-06	3.9	2007-02-28	78
+O-4	-106.26039	35.87288	7.61	2012-08-28	Y	Y	3.98	2019-12-17	4.1	2006-12-06	3.9	2007-02-28	79
 Otowi Booster #2	-106.24924	35.87481	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 Pajarito Booster #2	-106.26659	35.84542	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 PAO-3	-106.25901	35.88349	4.7	2005-05-10	Y	N	4.7	2005-05-10	No Data	No Data	No Data	No Data	5
@@ -244,35 +244,35 @@ PCAO-7c	-106.26252	35.8381	2.74	2009-09-14	Y	N	2.74	2009-09-14	No Data	No Data	N
 PCAO-8	-106.23837	35.82722	3.01	2010-06-08	Y	N	3.01	2010-06-08	No Data	No Data	No Data	No Data	12
 PCAO-9	-106.23271	35.82614	9.1	2008-09-17	Y	N	9.1	2008-09-17	No Data	No Data	No Data	No Data	6
 PCI-2	-106.29309	35.85331	2.6	2009-12-14	Y	N	2.6	2009-12-14	No Data	No Data	No Data	No Data	30
-PCO-1	-106.25843	35.83716	2.0	2005-08-24	Y	N	1.1	2005-08-24	No Data	No Data	No Data	No Data	9
-PCO-2	-106.24567	35.83016	5.8	2007-06-25	Y	N	3.4	2007-12-06	No Data	No Data	No Data	No Data	15
-PCO-3	-106.23087	35.82479	3.6	2007-12-07	Y	N	2.6	2008-03-18	No Data	No Data	No Data	No Data	14
+PCO-1	-106.25843	35.83716	2.0	2005-08-24	Y	N	1.1	2005-08-24	No Data	No Data	No Data	No Data	12
+PCO-2	-106.24567	35.83016	5.8	2007-06-25	Y	N	3.4	2007-12-06	No Data	No Data	No Data	No Data	16
+PCO-3	-106.23087	35.82479	3.6	2007-12-07	Y	N	2.6	2008-03-18	No Data	No Data	No Data	No Data	16
 PM-00004	-106.26618	35.85021	4.5	1999-03-26	Y	N	4.2	1999-03-30	No Data	No Data	No Data	No Data	5
-PM-1	-106.2253	35.85947	7.57	2012-08-28	Y	Y	5.75	2019-12-17	4.1	2006-01-19	3.3	2007-02-28	90
-PM-2	-106.26255	35.8383	7.46	2015-12-09	Y	N	4.14	2019-12-17	4.2	2006-08-24	3.7	2007-02-28	44
-PM-3	-106.24267	35.86337	11.6	2007-05-16	Y	N	4.06	2019-12-17	4.6	2006-01-19	3.8	2007-02-28	83
-PM-4	-106.26618	35.85021	60.0	2016-05-16	Y	N	5.57	2018-06-19	5.5	2006-05-09	4.7	2007-02-28	52
-PM-5	-106.27803	35.85858	15.6	2007-05-16	Y	Y	5.58	2019-02-28	5.7	2006-12-07	5.0	2007-02-28	81
+PM-1	-106.2253	35.85947	7.57	2012-08-28	Y	Y	4.24	2020-03-11	4.1	2006-01-19	3.6	2007-02-28	95
+PM-2	-106.26255	35.8383	7.46	2015-12-09	Y	N	4.14	2019-12-17	4.2	2006-08-24	3.7	2007-02-28	46
+PM-3	-106.24267	35.86337	11.6	2007-05-16	Y	N	5.16	2020-03-11	4.6	2006-01-19	3.7	2007-02-28	87
+PM-4	-106.26618	35.85021	60.0	2016-05-16	Y	N	5.57	2018-06-19	5.5	2006-05-09	4.8	2007-02-28	53
+PM-5	-106.27803	35.85858	15.6	2007-05-16	Y	Y	5.58	2019-02-28	5.7	2006-12-07	5.0	2007-02-28	82
 PO-4B	-106.24817	35.88141	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 POI-4	-106.21957	35.87176	4.7	2008-01-22	Y	N	2.09	2013-06-03	No Data	No Data	No Data	No Data	30
 PRB-MW-01	-106.27775	35.86383	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
 PRB-MW-02	-106.27756	35.86373	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	2
 PU-00001	-106.24788	35.88021	3.9	1996-06-12	Y	N	3.9	1996-06-12	No Data	No Data	No Data	No Data	4
 PU-00002	-106.21957	35.87176	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	4
-R-1	-106.27721	35.86356	9.8	2006-04-19	Y	Y	6.24	2019-11-08	9.8	2006-04-19	6.14	2018-05-10	86
+R-1	-106.27721	35.86356	9.8	2006-04-19	Y	Y	5.68	2019-11-08	9.8	2006-04-19	6.14	2018-05-10	86
 R-10 OB	-106.20597	35.85027	5.2	2005-09-08	Y	N	5.2	2005-09-08	No Data	No Data	No Data	No Data	1
 R-10 S1	-106.20597	35.85027	12.1518	2006-06-29	Y	N	3.77	2019-11-07	2.5	2006-06-29	2.12581	2008-05-27	50
 R-10 S2	-106.20597	35.85027	12.6675	2006-06-29	Y	N	3.14	2019-11-07	2.3	2006-06-29	2.15949	2008-05-27	53
 R-10a	-106.20615	35.85032	12.7	2007-08-15	Y	N	4.44	2019-11-07	7.6	2006-02-01	3.74	2018-05-15	89
-R-11	-106.25154	35.86288	35.1	2007-02-13	Y	N	14.2	2020-02-13	29.6	2006-04-20	9.3	2019-05-17	126
+R-11	-106.25154	35.86288	35.1	2007-02-13	Y	N	14.2	2020-03-16	29.6	2006-04-20	9.3	2019-05-17	127
 R-12 OB	-106.22635	35.85892	216.0	1998-06-09	Y	Y	216.0	1998-06-09	No Data	No Data	No Data	No Data	9
-R-12 S1	-106.22635	35.85892	6.33	2001-09-07	Y	N	1.3962	2011-06-03	0.4	2006-02-02	0.0	2008-05-15	50
+R-12 S1	-106.22635	35.85892	6.33	2001-09-07	Y	N	1.155	2011-06-03	0.4	2006-02-02	0.0	2008-05-15	50
 R-12 S2	-106.22635	35.85892	7.61	2002-08-01	Y	N	0.801	2013-07-22	0.5	2006-02-01	0.265727	2008-05-19	56
-R-12 S3	-106.22635	35.85892	9.3	2001-03-15	Y	N	1.0	2006-01-31	0.5	2006-01-31	0.3	2006-01-31	15
+R-12 S3	-106.22635	35.85892	9.3	2001-03-15	Y	N	1.0	2006-01-31	0.5	2006-01-31	0.5	2006-01-31	15
 R-13	-106.24806	35.8564	12.7	2009-04-30	Y	Y	5.69	2020-01-21	4.4	2006-02-02	3.71	2018-05-14	100
 R-13 OB	-106.24806	35.8564	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-R-14 S1	-106.28565	35.86178	9.9	2010-05-03	Y	N	5.04	2019-11-12	0.4	2006-01-24	0.4	2006-01-24	105
-R-14 S2	-106.28565	35.86178	7.8241	2006-06-28	Y	Y	2.5001	2007-11-08	0.4	2006-01-25	0.4	2006-01-25	26
+R-14 S1	-106.28565	35.86178	9.9	2010-05-03	Y	N	5.55	2019-11-12	0.4	2006-01-24	0.4	2006-01-24	105
+R-14 S2	-106.28565	35.86178	7.8241	2006-06-28	Y	Y	2.2842	2007-11-08	0.4	2006-01-25	0.4	2006-01-25	26
 R-15	-106.26724	35.85991	18.2	2010-02-11	Y	Y	14.0	2020-01-23	38.4044	2008-05-20	10.9	2019-05-09	106
 R-15 OB	-106.26724	35.85991	689.0	1999-07-22	Y	N	21.8	1999-08-27	No Data	No Data	No Data	No Data	4
 R-17 OB	-106.29259	35.85328	6.5	2005-12-14	Y	N	1.2	2006-01-13	No Data	No Data	No Data	No Data	3
@@ -284,7 +284,7 @@ R-19 S1	-106.28542	35.83787	No Data	No Data	No Data	No Data	No Data	No Data	No D
 R-19 S2	-106.28542	35.83787	46.6	2009-03-10	Y	N	2.81	2014-04-09	No Data	No Data	No Data	No Data	51
 R-19 S3	-106.28542	35.83787	29.0	2001-04-09	Y	N	2.3	2015-04-14	No Data	No Data	No Data	No Data	55
 R-19 S4	-106.28542	35.83787	37.3	2006-08-16	Y	N	2.87	2014-04-11	No Data	No Data	No Data	No Data	59
-R-19 S5	-106.28542	35.83787	9.2	2001-07-12	Y	N	5.5076	2010-06-04	No Data	No Data	No Data	No Data	38
+R-19 S5	-106.28542	35.83787	9.2	2001-07-12	Y	N	3.7858	2010-06-04	No Data	No Data	No Data	No Data	38
 R-19 S6	-106.28542	35.83787	3.2367	2009-05-28	Y	Y	1.3476	2010-06-04	No Data	No Data	No Data	No Data	38
 R-19 S7	-106.28542	35.83787	15.0	2001-03-29	Y	N	1.441	2010-06-04	No Data	No Data	No Data	No Data	42
 R-2	-106.28679	35.8874	25.9	2008-01-11	Y	N	4.03	2018-09-20	4.4	2006-02-27	4.4	2006-02-27	34
@@ -299,7 +299,7 @@ R-22 S1	-106.23344	35.82925	31.4	2005-06-27	Y	N	2.8152	2009-07-02	No Data	No Dat
 R-22 S2	-106.23344	35.82925	20.1	2001-12-03	Y	N	3.9	2008-12-18	No Data	No Data	No Data	No Data	39
 R-22 S3	-106.23344	35.82925	40.0	2001-06-21	Y	N	5.8	2009-02-27	No Data	No Data	No Data	No Data	41
 R-22 S4	-106.23344	35.82925	10.4	2007-03-22	Y	Y	6.303	2009-02-26	No Data	No Data	No Data	No Data	34
-R-22 S5	-106.23344	35.82925	17.1589	2009-05-17	Y	N	5.3768	2009-05-26	No Data	No Data	No Data	No Data	106
+R-22 S5	-106.23344	35.82925	17.1589	2009-05-17	Y	N	4.8775	2009-05-26	No Data	No Data	No Data	No Data	106
 R-23	-106.22471	35.8239	20.1	2009-02-25	Y	N	3.6	2019-10-23	No Data	No Data	No Data	No Data	67
 R-23i OB	-106.22476	35.82385	2.1	2005-10-20	Y	N	1.2	2005-10-31	No Data	No Data	No Data	No Data	2
 R-23i PZ-1	-106.22476	35.82385	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
@@ -312,12 +312,12 @@ R-3	-106.2209	35.87179	27.7622	2010-05-12	Y	N	5.02	2016-06-06	No Data	No Data	No
 R-32 OB	-106.24872	35.83095	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 R-32 S1	-106.24872	35.83095	24.3	2007-03-26	Y	N	1.26	2012-10-19	No Data	No Data	No Data	No Data	71
 R-32 S2	-106.24872	35.83095	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-R-32 S3	-106.24872	35.83095	10.4	2006-08-30	Y	N	2.4	2007-07-06	No Data	No Data	No Data	No Data	22
+R-32 S3	-106.24872	35.83095	10.4	2006-08-30	Y	N	3.0	2007-07-06	No Data	No Data	No Data	No Data	22
 R-33 S1	-106.27368	35.86062	12.3	2005-09-14	Y	N	9.04	2020-01-07	5.98	2018-05-09	5.98	2018-05-09	107
 R-33 S2	-106.27368	35.86062	8.9	2007-11-19	Y	N	8.81	2020-01-07	6.03	2018-05-09	6.03	2018-05-09	111
 R-34	-106.23927	35.84825	11.0	2006-01-31	Y	N	4.57	2019-11-13	5.6	2006-01-31	3.66108	2008-05-28	103
-R-35a	-106.24355	35.86276	29.2	2010-02-11	Y	N	4.95	2020-02-18	3.66	2018-05-11	3.45	2019-05-07	102
-R-35b	-106.24386	35.8628	7.44	2016-05-02	Y	Y	4.65	2020-02-13	4.4	2018-05-11	4.07	2019-05-07	95
+R-35a	-106.24355	35.86276	29.2	2010-02-11	Y	N	5.05	2020-03-17	3.66	2018-05-11	3.45	2019-05-07	103
+R-35b	-106.24386	35.8628	7.44	2016-05-02	Y	Y	5.08	2020-03-16	4.4	2018-05-11	4.07	2019-05-07	96
 R-36	-106.23822	35.85844	12.2	2008-05-12	Y	N	6.04	2020-01-14	4.76	2018-05-11	4.33	2019-05-08	112
 R-37 S1	-106.25873	35.84437	3.84	2011-10-28	Y	Y	0.92	2018-10-22	No Data	No Data	No Data	No Data	36
 R-37 S2	-106.25873	35.84437	21.5	2010-10-14	Y	N	3.26	2019-10-17	No Data	No Data	No Data	No Data	34
@@ -339,10 +339,10 @@ R-42	-106.25914	35.86129	1270.0	2010-11-10	Y	N	793.0	2017-07-28	No Data	No Data	
 R-43	-106.26073	35.8636	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 R-43 S1	-106.26073	35.8636	223.0	2019-11-14	Y	Y	215.0	2020-01-09	205.0	2019-05-10	205.0	2019-05-10	83
 R-43 S2	-106.26073	35.8636	35.2	2020-01-09	Y	Y	35.2	2020-01-09	20.6	2018-05-17	20.6	2018-05-17	102
-R-44 S1	-106.2512	35.85672	21.8	2016-05-03	Y	Y	5.13	2020-02-20	12.5	2018-05-16	5.57	2019-05-15	97
-R-44 S2	-106.2512	35.85672	16.8	2010-02-10	Y	Y	5.52	2020-02-20	7.01	2018-05-16	7.01	2018-05-16	105
-R-45 S1	-106.25056	35.85921	50.7	2017-12-18	Y	Y	23.8	2020-02-28	42.8	2018-05-16	32.9	2019-05-15	93
-R-45 S2	-106.25056	35.85921	42.3	2017-10-31	Y	Y	38.1	2020-02-28	24.2	2018-05-16	24.2	2018-05-16	88
+R-44 S1	-106.2512	35.85672	21.8	2016-05-03	Y	Y	7.38	2020-03-12	12.5	2018-05-16	5.57	2019-05-15	98
+R-44 S2	-106.2512	35.85672	16.8	2010-02-10	Y	Y	8.04	2020-03-12	7.01	2018-05-16	7.01	2018-05-16	106
+R-45 S1	-106.25056	35.85921	50.7	2017-12-18	Y	Y	25.7	2020-03-13	42.8	2018-05-16	32.9	2019-05-15	94
+R-45 S2	-106.25056	35.85921	47.6	2020-03-13	Y	Y	47.6	2020-03-13	24.2	2018-05-16	24.2	2018-05-16	89
 R-46	-106.29382	35.85966	10.7	2009-05-13	Y	N	5.33	2019-11-21	No Data	No Data	No Data	No Data	39
 R-49	-106.23825	35.8273	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 R-49 S1	-106.23825	35.8273	7.82	2009-12-07	Y	N	2.39	2015-10-22	No Data	No Data	No Data	No Data	43
@@ -361,7 +361,7 @@ R-52 S1	-106.26157	35.84495	4.9	2010-05-02	Y	N	1.13	2019-04-09	No Data	No Data	N
 R-52 S2	-106.26157	35.84495	6.32	2010-04-23	Y	N	1.55	2019-04-09	No Data	No Data	No Data	No Data	40
 R-53 S1	-106.25104	35.8368	3.8	2010-10-12	Y	N	2.39	2015-11-04	No Data	No Data	No Data	No Data	23
 R-53 S2	-106.25104	35.8368	5.4	2010-10-12	Y	N	3.39	2019-10-25	No Data	No Data	No Data	No Data	23
-R-54 S1	-106.25544	35.83609	143.0	2010-02-15	Y	N	1.1334	2011-07-12	No Data	No Data	No Data	No Data	46
+R-54 S1	-106.25544	35.83609	143.0	2010-02-15	Y	N	1.1246	2011-07-12	No Data	No Data	No Data	No Data	46
 R-54 S2	-106.25544	35.83609	9.03	2019-10-21	Y	Y	9.03	2019-10-21	No Data	No Data	No Data	No Data	26
 R-55 S1	-106.22751	35.82969	7.0	2011-10-28	Y	Y	3.57	2019-10-16	No Data	No Data	No Data	No Data	25
 R-55 S2	-106.22751	35.82969	6.47	2010-09-14	Y	Y	3.95	2019-10-16	No Data	No Data	No Data	No Data	25
@@ -376,7 +376,7 @@ R-60	-106.29618	35.86057	7.91	2010-12-16	Y	N	4.94	2019-11-15	No Data	No Data	No 
 R-61 S1	-106.2612	35.85758	39.1	2019-06-06	Y	Y	36.8	2020-03-06	No Data	No Data	No Data	No Data	99
 R-61 S2	-106.2612	35.85758	34.2018	2012-02-08	Y	N	0.843	2013-02-12	No Data	No Data	No Data	No Data	51
 R-62	-106.26647	35.86312	322.0	2017-02-21	Y	Y	294.0	2019-11-12	326.0	2019-05-14	326.0	2019-05-14	61
-R-64	-106.27541	35.8772	6.22	2016-08-29	Y	Y	3.06	2017-03-23	No Data	No Data	No Data	No Data	43
+R-64	-106.27541	35.8772	6.22	2016-08-29	Y	Y	2.08	2017-03-23	No Data	No Data	No Data	No Data	43
 R-66	-106.25987	35.87309	4.33	2014-02-06	Y	Y	3.54	2019-09-12	No Data	No Data	No Data	No Data	24
 R-67	-106.29012	35.87035	9.25	2019-01-09	Y	Y	8.47	2020-01-15	8.24	2018-05-21	7.61	2019-05-10	35
 R-6i	-106.26493	35.87534	10.0	2006-03-01	Y	N	2.2	2016-08-23	1.7	2006-03-01	1.7	2006-03-01	37
@@ -417,8 +417,8 @@ SCPZ-6	-106.31243	35.87477	6.9	2013-03-29	Y	Y	3.31	2015-05-29	1.0	2015-05-29	1.0
 SCPZ-7	-106.31114	35.87376	26.95	2014-08-04	Y	Y	22.08	2015-05-27	1.0	2015-05-27	1.0	2015-05-27	3
 SCPZ-8	-106.3111	35.87378	9.43	2013-03-29	Y	Y	6.89	2015-05-27	1.0	2015-05-27	1.0	2015-05-27	4
 SCPZ-9	-106.31105	35.87386	29.97	2014-08-04	Y	Y	26.84	2015-05-27	1.0	2015-05-27	1.0	2015-05-27	4
-SIMR-2	-106.25103	35.85399	9.41	2017-11-15	Y	Y	5.18	2019-12-19	4.88	2019-10-15	4.88	2019-10-15	51
-Skate Spring	-106.32862	35.88133	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+SIMR-2	-106.25103	35.85399	9.41	2017-11-15	Y	Y	5.29	2020-03-18	4.88	2019-10-15	4.88	2019-10-15	54
+Skate Spring	-106.32862	35.88133	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 SM-30 Spring	-106.33066	35.87321	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 SM-30A Spring	-106.33074	35.87248	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 SWA-1	-106.31476	35.87542	46.31	2015-05-26	Y	Y	46.31	2015-05-26	1.0	2015-05-26	1.0	2015-05-26	3
@@ -435,17 +435,17 @@ SWL-4	-106.31056	35.87371	29.04	2015-06-03	Y	Y	29.04	2015-06-03	1.0	2015-06-03	1
 TA-18 Cistern	-106.27271	35.83917	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 TA-18 Spring	-106.27095	35.8392	5.2	2005-03-18	Y	Y	1.2	2007-09-17	No Data	No Data	No Data	No Data	16
 TA-53i	-106.26541	35.86828	23.1	2010-08-25	Y	N	3.82	2019-09-18	No Data	No Data	No Data	No Data	20
-Test Well 1	-106.21751	35.87036	2.4	2005-03-23	Y	Y	1.5	2005-05-04	No Data	No Data	No Data	No Data	14
-Test Well 1A	-106.21746	35.87033	1.9	2005-03-24	Y	Y	1.9	2005-03-24	No Data	No Data	No Data	No Data	6
-Test Well 2	-106.27088	35.88462	1.4	2005-03-22	Y	Y	1.4	2005-03-22	No Data	No Data	No Data	No Data	5
-Test Well 2A	-106.27104	35.88468	6.01	2009-07-21	Y	N	6.01	2009-07-21	No Data	No Data	No Data	No Data	8
-Test Well 3	-106.25908	35.87328	3.6	2005-03-21	Y	Y	2.4	2006-01-19	No Data	No Data	No Data	No Data	18
-Test Well 4	-106.30533	35.88574	2.74	2002-05-17	Y	N	2.74	2002-05-17	No Data	No Data	No Data	No Data	8
-Test Well 8	-106.27647	35.8633	17.1	2007-06-06	Y	N	5.33	2009-06-24	2.3	2006-01-24	2.3	2006-01-24	36
+Test Well 1	-106.21751	35.87036	2.4	2005-03-23	Y	Y	1.5	2005-05-04	No Data	No Data	No Data	No Data	18
+Test Well 1A	-106.21746	35.87033	1.9	2005-03-24	Y	Y	1.9	2005-03-24	No Data	No Data	No Data	No Data	11
+Test Well 2	-106.27088	35.88462	1.4	2005-03-22	Y	Y	1.4	2005-03-22	No Data	No Data	No Data	No Data	9
+Test Well 2A	-106.27104	35.88468	6.01	2009-07-21	Y	N	6.01	2009-07-21	No Data	No Data	No Data	No Data	14
+Test Well 3	-106.25908	35.87328	3.6	2005-03-21	Y	Y	2.4	2006-01-19	No Data	No Data	No Data	No Data	19
+Test Well 4	-106.30533	35.88574	2.74	2002-05-17	Y	N	2.74	2002-05-17	No Data	No Data	No Data	No Data	10
+Test Well 8	-106.27647	35.8633	17.1	2007-06-06	Y	N	5.33	2009-06-24	2.3	2006-01-24	2.3	2006-01-24	41
 Test Well TW-1	-106.21751	35.87036	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
-Threemile Spring	-106.27865	35.84164	1.8	2007-03-20	Y	N	1.5	2007-03-20	No Data	No Data	No Data	No Data	4
+Threemile Spring	-106.27865	35.84164	1.8	2007-03-20	Y	N	1.8	2007-03-20	No Data	No Data	No Data	No Data	4
 TMO-1	-106.29585	35.8541	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	6
-TS-1.42 SPRING	-106.29591	35.86138	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
+TS-1.42 SPRING	-106.29591	35.86138	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Detect Data	No Data	No Data	No Data	No Data	1
 TSCA-6	-106.27518	35.86046	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 TSWB-6	-106.27374	35.86051	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	No Data	0
 TW-1.72 Spring	-106.323	35.86773	14.0	2009-09-16	Y	N	11.6	2009-09-16	No Data	No Data	No Data	No Data	10
