@@ -115,7 +115,7 @@ greyFill = PatternFill(start_color='d3d3d3',
                    end_color='d3d3d3',
                    fill_type='solid')	
 				   
-canyonsOut = ['Sandia', 'Mortendad', 'Los Alamos']
+canyonsOut = ['Sandia', 'Mortandad', 'Los Alamos', 'Pajarito']
 
 # Define aquifers
 aquifers = ['Alluvial', 'Intermediate', 'Regional']
@@ -195,7 +195,7 @@ for aquifer in aquifers:
 		exhibitSheet.row_dimensions[2].height = 46
 		
 		# Define rowWidths
-		rowWidths = [12.25, 10.14, 12, 9.15, 7, 16.25, 8.43, 8.43]
+		rowWidths = [12.25, 10.14, 13, 9.15, 7, 16.25, 8.43, 8.43]
 
 		# Adjust columns widths and wrap header text
 		colNum = 0
@@ -218,13 +218,15 @@ for aquifer in aquifers:
 			# Check if it is a new canyon
 			if canyon != canyonLast and canyon in canyonsOut:
 				# Handle canyons
-				if canyon == canyonsOut[0]:
-					canyonOut = canyonsOut[0]+' Canyon'
-				elif canyon == canyonsOut[1]:
-					canyonOut = canyonsOut[1]+' Canyon'
-				elif canyon == canyonsOut[2]:
-					canyonOut = canyonsOut[2]+' and Pajarito Canyons'
+				# if canyon == canyonsOut[0]:
+					# canyonOut = canyonsOut[0]+' Canyon'
+				# elif canyon == canyonsOut[1]:
+					# canyonOut = canyonsOut[1]+' Canyon'
+				# elif canyon == canyonsOut[2]:
+					# canyonOut = canyonsOut[2]+' and Pajarito Canyons'
 					
+				canyonOut = canyon+' Canyon'
+				
 				# Merge cells 
 				exhibitSheet.merge_cells('A'+str(rowNum+extraRow)+':H'+str(rowNum+extraRow)) 
 				# Write canyon to merged cells

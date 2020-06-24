@@ -121,7 +121,7 @@ server = getCredentials()
 aquifer = 'Alluvial'
 
 # Define watersheds list
-watersheds = ['Sandia', 'Mortendad', 'Los Alamos', 'Pajarito']
+watersheds = ['Sandia', 'Mortandad', 'Los Alamos', 'Pajarito']
 
 # Define aquifer list
 aquifers = ['Alluvial', 'Intermediate', 'Regional', 'Spring', 'Undefined']

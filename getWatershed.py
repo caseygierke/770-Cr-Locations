@@ -53,6 +53,7 @@ fout = open(path+os.sep+'Outputs'+os.sep+'Compiled- Narrowed- For DB.txt', 'w')
 sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds- Revised") 
 # # IEc file takes a very long time and does not populate all the fields
 # sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds_IEcD-Lat-Long") 
+# sf = shp.Reader('C:'+os.sep+'Projects'+os.sep+'770- LANL'+os.sep+'GIS'+os.sep+'Chromium'+os.sep+'Extended Chromium Examination Area'+os.sep+"Watersheds_IEc_Grouped") 
 
 #Read records in shapefile
 sfRec = sf.records() 
@@ -62,6 +63,8 @@ coorDict = {}
 matplotDict = []
 watershedFinal = {}
 
+indexLocation = 1
+
 #Iterate through shapes in shapefile
 for shape in sf.shapeRecords(): 
 	#Initially for use in matplotlib to check shapefile
@@ -70,28 +73,32 @@ for shape in sf.shapeRecords():
 	y = [point[1] for point in shape.shape.points[:]] 
 
 	# Check if canyon in sfRec[n][1]
-	if 'Canyon' in sfRec[n][1]:
-		print('Changing '+sfRec[n][1])
-		sfRec[n][1] = sfRec[n][1][:-7]
+	if 'Canyon' in sfRec[n][indexLocation]:
+		print('Changing '+sfRec[n][indexLocation])
+		sfRec[n][indexLocation] = sfRec[n][indexLocation][:-7]
 	
 	# Check if polygon already exists
-	if sfRec[n][1] in watershedFinal:
+	if sfRec[n][indexLocation] in watershedFinal:
 		
-		print(sfRec[n][1]+' exists, adding to it')
+		print(sfRec[n][indexLocation]+' exists, adding to it')
 		
 		# Get existing array
-		matplotDict = list(watershedFinal[sfRec[n][1]].exterior.coords)
+		matplotDict = list(watershedFinal[sfRec[n][indexLocation]].exterior.coords)
 		
 	for point in x:
 		#Convert coordinates to be read by Shapely pkg
 		matplotDict.append((x[x.index(point)],y[x.index(point)])) 
 
 	#Store shape in dictionary with key of watershedcipality
-	watershedFinal[sfRec[n][1]] = Polygon(matplotDict) 
+	watershedFinal[sfRec[n][indexLocation]] = Polygon(matplotDict) 
 
 	#refresh coordinate store for next shape   
 	matplotDict = [] 
 	n += 1 
+
+# Fix Mortandad spelling
+watershedFinal['Mortandad'] = watershedFinal['Mortendad']
+del watershedFinal['Mortendad']
 
 # Get first line
 headerLine = locationFile.readline()
@@ -130,8 +137,10 @@ for line in locationFile:
 			print(location, 'in', ws)
 			
 			# Redefine watershed
-			cols[ws_index] = ws
-			
+			if location[:4] == 'R-23':
+				cols[ws_index] = 'Pajarito'
+			else:
+				cols[ws_index] = ws
 	# Convert cols list to string
 	outLine = '\t'.join(cols)
 	fout.write(outLine)
@@ -139,3 +148,4 @@ for line in locationFile:
 # Close files
 locationFile.close()
 fout.close()
+
